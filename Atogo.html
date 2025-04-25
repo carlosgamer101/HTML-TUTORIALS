@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="eng">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        #special-paragraph {
+            font-size: 22px;
+            font-weight: bold;
+            color: #b8b7b6;
+        }
+
+        #styled-paragraph {
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            color: #f0d0af;
+        }
+
+        .Cool {
+            color: #ddd;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #1a1a1a;
+            border-left: 4px solid #4CAF50;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .Cool2 {
+            font-family: 'Poppins', sans-serif;
+            color: #ccc;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 12px 0;
+            padding: 12px 15px;
+            background: linear-gradient(to right, #1e1e1e, #292929);
+            border-left: 5px solid #ff9800;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .container img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Dropdown Styling */
+        .selector-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        select {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="Cool">
+        <h1 id="styled-paragraph"><u> ATOGO FAMILY</u></h1>
+        <p id="special-paragraph">This is a Page dedicated to giving various info about the Atogo Family</p>
+
+        <!-- Dropdown to Select a Person -->
+        <div class="selector-container">
+            <label for="person-select"><strong>Select a Person:</strong></label>
+            <select id="person-select" onchange="scrollToPerson()">
+                <option value="">-- Choose --</option>
+                <option value="carl">Carl Atogo</option>
+                <option value="meghan">Meghan Atogo</option>
+                <option value="masha">Masha Atogo</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Carl Atogo Section -->
+    <div id="carl" class="Cool2">
+        <h1><u> CARL ATOGO</u></h1>
+        <div class="container">
+            <img src="C:\Users\Babayaga\Documents\HTML TUTORIALS\1000578042.jpg">
+            <p>Carl Atogo, born in Lagos, Nigeria, in 1980, is a respected civil rights attorney and activist. He gained national recognition for his role in advocating for human rights and justice reforms across Africa. After earning his law degree from Oxford University, Carl returned home to fight against systemic injustices, representing marginalized communities in high-profile cases. His work led to the passing of several progressive laws aimed at protecting minority rights. Carl is also the founder of the Atogo Legal Aid Foundation, which provides pro bono legal assistance to those in need. His unwavering dedication has earned him multiple international awards, making him a symbol of justice and equality.</p>
+        </div>
+    </div>
+
+    <!-- Meghan Atogo Section -->
+    <div id="meghan" class="Cool2">
+        <h1><u> MEGHAN ATOGO</u></h1>
+        <div class="container">
+            <img src="C:\Users\Babayaga\Documents\HTML TUTORIALS\1000603273.jpg">
+            <p>Meghan Atogo, born in Nairobi, Kenya, in 1987, is a renowned entrepreneur, philanthropist, and technology innovator. From an early age, she displayed a keen interest in engineering and digital solutions, which led her to pursue a degree in Computer Science at the University of Cape Town. After graduating, Meghan founded Atogo Tech Solutions, a startup dedicated to providing AI-powered financial tools for underbanked communities in Africa. Her innovative approach to financial inclusion helped millions gain access to secure digital banking, earning her a spot on Forbes’ 30 Under 30 list in 2018. Beyond technology, Meghan is a strong advocate for women in STEM and has launched multiple initiatives to support young African women in tech. She has spoken at TEDx conferences, collaborated with global NGOs, and was awarded the African Innovator Award in 2022. Today, Meghan Atogo continues to revolutionize the fintech industry while mentoring the next generation of African leaders. She is a firm believer in using technology to drive social change and remains a powerful voice in the world of digital transformation.</p>
+        </div>
+    </div>
+
+    <!-- Masha Atogo Section -->
+    <div id="masha" class="Cool2">
+        <h1><u> MASHA ATOGO</u></h1>
+        <div class="container">
+            <img src="C:\Users\Babayaga\Documents\HTML TUTORIALS\1000425360.jpg">
+            <p>Masha Atogo, born in Accra, Ghana, in 1992, is an influential environmental scientist, activist, and author known for her groundbreaking work in climate change resilience and sustainable agriculture. Growing up in a rural community, she witnessed firsthand the devastating effects of deforestation and soil degradation, sparking her passion for environmental conservation. She pursued a degree in Environmental Science at Harvard University and later completed a Ph.D. in Climate Policy at Oxford. Masha founded Green Earth Initiative, a non-profit organization dedicated to restoring ecosystems and promoting sustainable farming practices. She has worked with global organizations like the United Nations and has been featured in National Geographic for her pioneering research. In addition to her activism, Masha has authored two best-selling books on environmental preservation. She continues to inspire the world through her work in policy-making and hands-on conservation efforts.
+
+            </p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        function scrollToPerson() {
+            var selectedPerson = document.getElementById("person-select").value;
+            
+            if (selectedPerson) {
+                document.getElementById(selectedPerson).scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+
+</body>
+</html>

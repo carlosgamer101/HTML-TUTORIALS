@@ -1,0 +1,64 @@
+#demo {
+    background: linear-gradient(135deg, #e51e13 20%, #fda085 20%);
+    padding: auto;
+    border-radius: 100px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .demo {
+    background: linear-gradient(135deg, #e51e13 0%, #fda085 100%);
+    padding: 20px;
+    border-radius: 9px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  #demo:hover{
+    color: #1e1919;
+    transform: scale(1.05);
+
+  }
+  
+  .siss {
+    font-size: 1.2rem;
+    color: #444;
+    font-style: italic;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .siss:hover {
+    color: #f76c6c;
+    transform: scale(1.05);
+  }
+  
+  #cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  ul + li{
+    color: #fda085;
+    font-size: xx-large;
+  }
+
+  h1 + p {
+
+  }
+  
+
+/* body{
+    font-family: fantasy;
+    font-size: large;
+    background-color: linear-gradient(to bottom, #291d1a, #feb47b);
+    font-size: x-large;
+    text-align: center;     
+} */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style Example</title>
+    <style>
+        #demo {
+            font-size: 20px;
+            font-style: normal;
+            color: black;
+            background-color: white;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid black;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="demo">This is a sample text.</p>
+    
+    <button type="button" onclick="changeStyle()">Click Me!</button>
+
+    <script>
+        function changeStyle() {
+            let element = document.getElementById("demo");
+            element.style.fontSize = "35px";
+            element.style.fontStyle = "italic";
+            element.style.color = "blue";
+            element.style.backgroundColor = "yellow";
+            element.style.textAlign = "center";
+            element.style.border = "2px solid red";
+        }
+    </script>
+
+</body>
+</html>
