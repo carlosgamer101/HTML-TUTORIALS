@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Fixed typo in lang="en" -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-image: url(Friends.jpeg);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .Header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 10px 20px;
+      background-color: rgb(24, 24, 23);
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .Header:hover {
+  color: #0c0b0b;
+  background-color: rgb(155, 107, 36);
+  transform: scale(1.006);
+}
+ 
+    
+
+    .Header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .Header h1 {
+      font-size: 1.8em;
+      margin: 0;
+    }
+   
+
+    h1, hr {
+      text-align: center;
+    }
+    h2, hr :hover{
+        color: black;
+    }
+
+    .form-container {
+      background-color: #1c1c1c;
+      padding: 30px;
+      margin-top: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 1em;
+    }
+    input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  color: rgb(232, 231, 221);
+  background-color: #040504; /* optional: to show it's hovering */
+  transform: scale(1.1);
+}
+
+
+    input:focus {
+      outline: 2px solid rgb(155, 107, 36);
+    }
+
+    .form-container button {
+      background-color: rgb(155, 107, 36);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: rgb(15, 14, 14);
+    }
+
+    a[title]{
+      color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Header">
+    <img src="picha.jpeg" alt="Logo" />
+    <h1>Registration</h1>
+  </div>
+
+  <h1 title="FILL BWANA">FILL IN THE DETAILS BELOW</h1>
+  <hr style="width: 100%; border: 1px solid #fff;">
+
+  <div class="form-container">
+    <form>
+      <!-- Username -->
+      <label for="Username">USERNAME:</label>
+      <input type="text" id="Username" name="username" required>
+
+      <!-- Email -->
+      <label for="email">EMAIL:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Password -->
+      <label for="password">PASSWORD:</label>
+      <input type="password" id="password" name="password" required>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
